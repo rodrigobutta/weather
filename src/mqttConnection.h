@@ -22,6 +22,8 @@
     }
     Serial.println();
 
+    // handleMqttReceived(topic, messageTemp);
+
     if (String(topic) == "esp32/output") {
       Serial.print("Changing output to ");
       if(messageTemp == "on"){
